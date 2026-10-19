@@ -1,0 +1,46 @@
+vertexlitgeneric
+{
+$basetexture "models/infected/zombiebomb/zombiebomb"
+$lightwarptexture "models\survivors\coach\coach_head_wrp"
+$halflambert 0
+$diffuseexp 1
+$bumpmap "models\infected\zombiebomb\zombiebomb_normal"
+
+$phong 1
+$phongboost 1.2
+$phongexponent 12
+$phongfresnelranges "[.1 .3 .7]"
+$phongtint "[0.8 0.8 0.8]"
+
+$ambientocclusion 1
+$allowdiffusemodulation 0
+$ambientboost 0
+$color2 "[1 1 1]"
+
+$detail "models/infected/common/l4d2/ci_burning"
+	$seamless_detail 1
+	$seamless_scale ".005"
+	$detailscale 4
+	$detailblendfactor .001 
+	$detailblendmode 2
+
+	$bbqamount 1
+	$BurnLevel 0
+
+	Proxies
+	{
+		BBQLevel
+		{
+			resultVar $bbqamount
+		}
+		BurnLevel
+		{
+			resultVar $burnlevel
+		}
+		Equals
+		{
+			srcVar1 $BurnLevel
+			resultVar $detailblendfactor
+		}
+	}
+}
