@@ -1,0 +1,31 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/infected/breeder/breeder"
+	"$detail" "models/infected/common/l4d2/ci_burning"
+
+	"$nocull" "1"
+
+	"$bbqamount" "1"
+	"$BurnLevel" "0"
+
+	"Proxies"
+	{
+		"BBQLevel"
+		{
+			"resultVar" "$bbqamount"
+		}
+		"BurnLevel"
+		{
+			"resultVar" "$burnlevel"
+		}
+		"Equals"
+		{
+			"srcVar1" "$BurnLevel"
+			"resultVar" "$detailblendfactor"
+		}
+	}
+}
+
+
+
+
