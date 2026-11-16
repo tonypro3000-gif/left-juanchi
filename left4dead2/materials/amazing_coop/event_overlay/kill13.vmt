@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "amazing_coop/event_overlay/Kill13"
+	$translucent 1
+}
