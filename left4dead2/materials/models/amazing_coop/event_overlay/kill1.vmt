@@ -1,7 +1,0 @@
-"UnlitGeneric"
-{
-    "$basetexture" "amazing_coop/event_overlay/kill1"
-    "$translucent" "1"
-    "$ignorez" "1"
-    "$no_fullbright" "1"
-}
